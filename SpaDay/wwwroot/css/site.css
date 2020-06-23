@@ -24,6 +24,7 @@ a {
   border-color: #1861ac;
 }
 
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -62,6 +63,54 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+.squares div {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#square1 {
+    background-color: chartreuse;
+}
+
+#square2 {
+    background-color: hotpink;
+}
+
+#square3 {
+    background-color: darkblue;
+}
+
+#square4 {
+    background-color: purple;
+}
+
+#square5 {
+    background-color: lavender;
+}
+
+#square6 {
+    background-color: darkorange;
+}
+
+#square7 {
+    background-color: dodgerblue;
+}
+
+#square8 {
+    background-color: rosybrown;
+}
+
+#square9 {
+    background-color: lemonchiffon;
+}
+
+#square10 {
+    background-color: darkturquoise;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -69,3 +118,5 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
