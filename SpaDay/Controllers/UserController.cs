@@ -26,16 +26,21 @@ namespace SpaDay.Controllers
         [Route("/user")]
         public IActionResult SubmitAddUserForm(User newUser, string verify)
         {
+            ViewBag.email = newUser.Email;
+            ViewBag.createDate = newUser.Created.ToLongDateString();
             if(newUser.Password == verify)
             {
                 ViewBag.user = newUser;
-                //Users.Add(newUser);
                 return View("Index");
             }
             else
             {
+                ViewBag.error = "Passwords don't match";
+                ViewBag.username = newUser.Username;
+                ViewBag.email = newUser.Email;
                 return View("Add");
             }
+            
         }
     }
 }
